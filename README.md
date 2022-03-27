@@ -1,10 +1,10 @@
-# pytorch-time_series_data-prediction-with-gru-and-lstm
-(pytorch)time_series_data-prediction-with-gru-and-lstm
 ### 【Pytorch】基于GRU和LSTM的时间序列数据预测实现
 
 **1.实现结果：**
 
-<img src="C:\Users\Ejemplar\AppData\Roaming\Typora\typora-user-images\image-20220326230723481.png" alt="image-20220326230723481" style="zoom:50%;" /><img src="C:\Users\Ejemplar\AppData\Roaming\Typora\typora-user-images\image-20220326230749066.png" alt="image-20220326230749066" style="zoom:50%;" />
+<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220327192956318.png" alt="image-20220327192956318" style="zoom:50%;" />
+
+<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220327193009703.png" alt="image-20220327193009703" style="zoom:50%;" />
 
 ​		蓝色曲线为原数据集，包含1000个点（sin函数），训练集占80%。
 
@@ -14,7 +14,7 @@
 
 ​		下面附上数据集准备的代码：（因为是模块化的编程方式，在代码的第一行我会表注其所在的模块）
 
-![image-20220326230851125](C:\Users\Ejemplar\AppData\Roaming\Typora\typora-user-images\image-20220326230851125.png)
+![image-20220326230851125](https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220326230851125.png)
 
 ​		首先产生原始的1000个数据点
 
@@ -36,7 +36,7 @@ plt.show()
 
 ​		输出：
 
-<img src="C:\Users\Ejemplar\AppData\Roaming\Typora\typora-user-images\image-20220326230902165.png" alt="image-20220326230902165" style="zoom:50%;" />
+<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220326230902165.png" alt="image-20220326230902165" style="zoom:50%;" />
 
 ​		下面这段是产生数据集的最需要注意的地方：
 
@@ -91,7 +91,7 @@ print(dataset_target)
 
 ​		输出：
 
-dataset_features<img src="C:\Users\Ejemplar\AppData\Roaming\Typora\typora-user-images\image-20220326230929137.png" alt="image-20220326230929137" style="zoom: 80%;" />dataset_target<img src="D:\Typora\【Pytorch】基于GRU和LSTM的时间序列数据预测实现.assets\image-20220326222352452.png" alt="image-20220326222352452" style="zoom:80%;" />......<img src="D:\Typora\【Pytorch】基于GRU和LSTM的时间序列数据预测实现.assets\image-20220326222220648.png" alt="image-20220326222220648" style="zoom:80%;" />
+dataset_features<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220326230929137.png" alt="image-20220326230929137" style="zoom: 80%;" />dataset_target<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220326222352452.png" alt="image-20220326222352452" style="zoom:80%;" />......<img src="https://gitee.com/Ejemplarr/drawing-bed/raw/master/img/image-20220326222220648.png" alt="image-20220326222220648" style="zoom:80%;" />
 
 ​		与我们上述的论述相同，如果有兴趣可以修改lengths与targets的值的大小看效果。
 
